@@ -1,0 +1,53 @@
+# Node.js dependencies
+/node_modules
+
+# Environment variables
+.env
+
+# Compiled output
+/dist
+/build
+
+# IDE and editor files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Compiled binary files
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Package files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Miscellaneous
+*.class
+*.iml
+*.swp
+*.swo
+*.swn
+*.tmp
+*~
+

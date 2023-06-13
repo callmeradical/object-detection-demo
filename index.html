@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Object Detection Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="sidebar">
+        <select id="object-type" onchange="updateSelectedObjectType()">
+          <option value="all">All Objects</option>
+          <option value="person">Person</option>
+          <option value="chair">Chair</option>
+          <option value="table">Table</option>
+          <option value="bed">Bed</option>
+          <!-- Add more options for other object types -->
+        </select>
+        <button id="start-collecting" onclick="startCollecting()">
+          Start Collecting Images
+        </button>
+        <button id="stop-collecting" onclick="stopCollecting()" disabled>
+          Stop Collecting Images
+        </button>
+        <button id="show-images" onclick="showStoredImages()">
+          Show Stored Images
+        </button>
+      </div>
+      <div class="video-container">
+        <video id="video" width="640" height="480" autoplay></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+      </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="stored-images"></div>
+        <button id="prev-btn" onclick="previousPage()" disabled>
+          Previous
+        </button>
+        <button id="next-btn" onclick="nextPage()">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
