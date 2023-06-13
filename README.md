@@ -123,19 +123,19 @@ Please note, all these instructions are for the setup on a local machine. If you
 1. Clone this repository:
 
 ```bash
-    Copy code git clone <repository-url>
+git clone <repository-url>
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-Copy code cd object-detection-demo
+cd object-detection-demo
 ```
 
 3. Install the dependencies:
 
 ```bash
- npm install
+npm install
 ```
 
 ## About Git Submodules in this Project
