@@ -2,9 +2,77 @@
 
 This is a simple object detection application that performs real-time object detection using TensorFlow.js and the COCO-SSD model. It allows you to collect images of specific objects from your webcam and store them for later use.
 
+## About Git Submodules in this Project
+
+This project includes a Git submodule for Webslides. When you clone this repository, you also need to initialize and update the submodule to get the Webslides files. Here's how to do it:
+
+### Cloning the Repository and Submodule
+
+After cloning this repository with the usual `git clone <repository-url>`, navigate into the project's directory and run these commands:
+
+```bash
+git submodule init
+git submodule update
+```
+
+These commands initialize and fetch all data from the Webslides submodule.
+
+Updating the Submodule
+To update Webslides to its latest version, navigate to the submodule's directory and pull the latest changes as you would with any other Git repository:
+
+```bash
+cd webslides
+git pull origin master
+```
+
+This will keep your submodule up-to-date.
+
 ## Prerequisites
 
 Before running the demo, make sure you have the following prerequisites installed:
+
+- Git
+- Node.js
+- npm
+
+### Git
+
+Installation Instructions for Git
+
+#### Windows
+
+Download the official Git for Windows installer from the Git website: Git for Windows Download.
+Run the installer and follow the prompts. We recommend using the default settings unless you have a specific reason to modify them.
+To verify the installation, open a new Command Prompt window and type:
+
+```bash
+git --version
+```
+
+#### macOS
+
+If you have already installed Xcode Command Line Tools, Git might already be installed. You can check by opening a terminal and typing:
+
+```bash
+git --version
+```
+
+If Git responds with a version number, you already have Git installed.
+
+If you don't have Git installed, you can install it using Homebrew. If you don't have Homebrew installed, you can install it by pasting the following command into a terminal and hitting Enter:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+Once Homebrew is installed, you can install Git by typing:
+
+```bash
+brew install git
+```
+
+Verify the installation by typing git --version into your terminal. You should see the Git version you installed.
+You're now ready to use Git on your machine!
 
 ### Node.js & npm
 
