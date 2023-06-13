@@ -37,7 +37,22 @@ Before running the demo, make sure you have the following prerequisites installe
 
 ### Git
 
-Installation Instructions for Git
+#### What is git?
+
+Git is a distributed version control system (VCS) that helps track changes to files in a project over time. It was developed by Linus Torvalds, the creator of Linux, to help manage the development of the Linux kernel.
+
+In simpler terms, Git is a tool used by programmers to keep track of different versions of the files in their projects, allowing them to work on different parts of the project at the same time without overwriting each other's changes. It also allows them to easily revert back to an older version of their project if they make a mistake.
+
+Here are some key concepts in Git:
+
+- Repository (repo): This is the heart of Git where all the magic happens. It is essentially a directory where Git has been initialized to start version controlling your files.
+- Commit: This is the command that gives Git its power. When you commit, you are taking a "snapshot" of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.
+- Branch: This is a parallel version of a repository. It is contained within the repository, but does not affect the primary or master branch allowing you to work freely without disrupting the "live" version. When you've made the changes you want to make on a branch, you can merge your changes back to the master branch to publish them.
+- Clone: This is a copy of a repository that lives on your computer instead of on a server elsewhere, and is connected to the remote version.
+- Pull and Push: These are how you interact with a remote repository. You pull data from the remote repository to keep your local copy up to date, and push your changes up to the remote repository when they're ready to be shared with your team.
+- Merge: This is how you get changes from one branch into another. You'd typically merge from a feature branch back into the main branch when the feature is ready.
+  Remember, these are only the basics and Git has many more features and commands that you can use to manipulate your history, compare changes over time, and more!
+  Installation Instructions for Git
 
 #### Windows
 
