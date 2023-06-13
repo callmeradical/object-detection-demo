@@ -2,31 +2,6 @@
 
 This is a simple object detection application that performs real-time object detection using TensorFlow.js and the COCO-SSD model. It allows you to collect images of specific objects from your webcam and store them for later use.
 
-## About Git Submodules in this Project
-
-This project includes a Git submodule for Webslides. When you clone this repository, you also need to initialize and update the submodule to get the Webslides files. Here's how to do it:
-
-### Cloning the Repository and Submodule
-
-After cloning this repository with the usual `git clone <repository-url>`, navigate into the project's directory and run these commands:
-
-```bash
-git submodule init
-git submodule update
-```
-
-These commands initialize and fetch all data from the Webslides submodule.
-
-Updating the Submodule
-To update Webslides to its latest version, navigate to the submodule's directory and pull the latest changes as you would with any other Git repository:
-
-```bash
-cd webslides
-git pull origin master
-```
-
-This will keep your submodule up-to-date.
-
 ## Prerequisites
 
 Before running the demo, make sure you have the following prerequisites installed:
@@ -152,6 +127,32 @@ Copy code cd object-detection-demo
  npm install
 ```
 
+## About Git Submodules in this Project
+
+This project includes a Git submodule for Webslides. When you clone this repository, you also need to initialize and update the submodule to get the Webslides files. Here's how to do it:
+
+### Cloning the Repository and Submodule
+
+After cloning this repository with the usual `git clone <repository-url>`, navigate into the project's directory and run these commands:
+
+```bash
+git submodule init
+git submodule update
+```
+
+These commands initialize and fetch all data from the Webslides submodule.
+
+#### Updating the Submodule
+
+To update Webslides to its latest version, navigate to the submodule's directory and pull the latest changes as you would with any other Git repository:
+
+```bash
+cd webslides
+git pull origin master
+```
+
+This will keep your submodule up-to-date.
+
 ## Usage
 
 To start the object detection demo, run the following command:
@@ -187,6 +188,27 @@ This project is licensed under the MIT License.
 The project includes three main files: `index.html`, `styles.css`, and `script.js`.
 
 The JavaScript file uses TensorFlow.js to interact with the COCO-SSD object detection model. It sets up a webcam feed and starts collecting images of the selected object type when the "Start Collecting Images" button is clicked. Collected images are stored in IndexedDB. You can view the stored images by clicking the "Show Stored Images" button.
+
+### TensorFlow
+
+TensorFlow is an open-source machine learning framework developed by Google Brain Team. It's used by numerous organizations, researchers, and developers worldwide to create machine learning models covering a wide array of tasks, including image recognition, natural language processing, and more.
+
+Key features of TensorFlow include:
+
+Flexibility: TensorFlow is highly flexible, meaning you can deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device with a single API.
+Portability: Models can be trained on various kinds of hardware, and then deployed on a completely different kind for inference. For instance, you might train a neural network on a GPU server, and then want to run it on a mobile device.
+Ecosystem compatibility: TensorFlow is part of a larger ecosystem of machine learning tools, including TensorFlow.js (for developing ML in JavaScript), TensorFlow Lite (for mobile and embedded devices), and more.
+
+### COCO-SSD Model
+
+COCO-SSD is a model trained on the Common Objects in Context (COCO) dataset using a Single Shot Multibox Detector (SSD) framework with MobileNet v1 architecture. It's used for object detection tasks, and is capable of identifying multiple objects in an image.
+
+Key features of the COCO-SSD model:
+
+Real-time object detection: COCO-SSD is fast enough to be used in real-time object detection scenarios.
+Variety of classes: The COCO dataset contains 80 object categories, making the COCO-SSD model versatile in the types of objects it can detect.
+Optimized for mobile: The underlying MobileNet architecture of the COCO-SSD model is designed with mobile devices in mind, balancing detection accuracy with the model size and speed.
+In the context of this project, TensorFlow.js is used to run the COCO-SSD model in the browser for real-time object detection using the user's webcam feed. This enables users to interact with the application in a real-time, interactive manner, and shows the power and flexibility of both TensorFlow.js and the COCO-SSD model.
 
 ## Note
 
