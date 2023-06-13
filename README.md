@@ -123,7 +123,7 @@ Please note, all these instructions are for the setup on a local machine. If you
 1. Clone this repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/callmeradical/object-detection-demo.git
 ```
 
 2. Navigate to the project directory:
