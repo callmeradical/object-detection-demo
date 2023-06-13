@@ -2,6 +2,17 @@
 
 This is a simple object detection application that performs real-time object detection using TensorFlow.js and the COCO-SSD model. It allows you to collect images of specific objects from your webcam and store them for later use.
 
+## Live Demo
+
+If you just want to see a working demo of the object detection application without diving into the code, you can navigate to the following URL:
+
+https://geekoutdemox.cromleylabs.com/
+
+This live demo showcases the power of edge computing. With edge computing, the object detection computations are performed directly in your web browser, utilizing the capabilities of your local device's hardware. This approach reduces the need for data transmission to remote servers, resulting in lower latency, improved performance, and enhanced privacy.
+
+By running the object detection model at the edge, the demo provides real-time object detection capabilities, allowing you to see immediate results as objects are detected in the video feed from your webcam. It demonstrates the ability to perform complex computations closer to the data source, delivering faster response times and enabling offline capabilities even when an internet connection is not available.
+
+Experience the seamless integration of edge computing in this live demo, and explore the benefits it brings in terms of real-time object detection, privacy preservation, and enhanced user experience.
 ## Prerequisites
 
 Before running the demo, make sure you have the following prerequisites installed:
